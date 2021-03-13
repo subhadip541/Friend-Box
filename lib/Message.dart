@@ -18,7 +18,7 @@ final User currentuser = User(
 final User Subhadip = User(
   id: 1,
   name: "Subhadip",
-  image: 'assets/images/dip.jpg',
+  image: 'images/dip.jpg',
 );
 final User Swapnanil = User(
   id: 2,
@@ -28,24 +28,24 @@ final User Swapnanil = User(
 final User Avishek = User(
   id: 3,
   name: "Avishek",
-  image: 'assets/images/avi.jpg',
+  image: 'images/avi.jpg',
 );
 final User Swagato = User(
   id: 4,
   name: "Swagato",
-  image: 'assets/images/swag.jpg',
+  image: 'images/swag.jpg',
 );
 final User Suchetana = User(
   id: 5,
   name: "Suchetana",
-  image: 'assets/images/suche.jpg',
+  image: 'images/suche.jpg',
 );
 final User Anwesha = User(
   id: 6,
   name: "Anwesha",
-  image: 'assets/images/anu.jpg',
+  image: 'images/anu.jpg',
 );
-List<User> favorites = [Subhadip, Swapnanil, Anwesha, Swagato];
+List<User> favorites = [Subhadip, Swapnanil, Anwesha, Swagato, Suchetana];
 List<Message> chats = [
   Message(
     sender: Subhadip,

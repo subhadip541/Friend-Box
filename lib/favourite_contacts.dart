@@ -72,7 +72,6 @@ class _faourite_contactsState extends State<faourite_contacts> {
         ),
         Container(
             height: 120,
-            color: Colors.blue,
             child: ListView.builder(
               padding: EdgeInsets.only(left: 10),
               scrollDirection: Axis.horizontal,
@@ -80,12 +79,22 @@ class _faourite_contactsState extends State<faourite_contacts> {
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   children: <Widget>[
-                    CircleAvatar(
-                      backgroundImage: AssetImage(
-                        favorites[index].image,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleAvatar(
+                        radius: 37,
+                        backgroundImage: AssetImage(
+                          favorites[index].image,
+                        ),
                       ),
                     ),
-                    Text(favorites[index].name),
+                    Text(
+                      favorites[index].name,
+                      style: TextStyle(
+                        color: Colors.grey[300],
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 );
               },
